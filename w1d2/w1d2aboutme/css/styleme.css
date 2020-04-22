@@ -1,0 +1,84 @@
+h2{
+	color: Maroon;
+	font-family: "Arial Black";
+}
+h3{
+	color: green;
+	font-family: Tahoma;
+}
+
+b{
+	color: blue;
+	text-decoration: underline, overline;
+}
+
+body{
+	background-color: #39CCCC;
+	font-family: Georgia;
+}
+
+a{
+	color: rgb(220,20,60);
+	font-style: italic;
+}
+
+<!-- Not set underline for hyperlink -->
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+img.left{
+	width: 150px;
+	height: 150px;
+	
+}
+
+img.right{
+	width: 200px;
+	height: 150px;
+	
+}
+
+p.center{
+	text-align: center;
+}
+
+
+span.bold{
+	font-weight: bold; 
+	color: blue;
+}
+
+span.italic{
+	font-weight: lighter;
+	font-style: italic;  
+	color: blue;
+}
+
+span.underline{
+	font-weight: bolder;
+	text-decoration: underline;
+	color: blue;
+}
+
+
+p.dropcap:first-letter {
+    font-size: 150%;
+    float: left;
+    
+} <!-- First CAP character have bigger size -->
+
