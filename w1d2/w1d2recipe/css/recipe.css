@@ -1,0 +1,72 @@
+h1{
+	display: table; /* keep the background color wrapped tight */
+    margin: 0px auto 0px auto; /* keep the table centered */
+	//text-align: center;
+	background-color: #F0F0F0;
+	color: #A4A400;
+	font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	font-size: 22pt;
+	font: bold;
+	text-decoration: underline;
+	letter-spacing: 0.25em;
+}
+
+h2{
+	display: table; 
+	text-align: left;
+	background-color: #F0F0F0;
+	color: #A4A400;
+	font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	font-size: 18pt;
+	font: bold;
+	text-decoration: underline;
+	letter-spacing: 0.25em;
+}
+
+.rightAlign {
+	text-align: right;
+}
+
+ul{
+	list-style-image: url("../recipeImages/pie_bullet.png");
+}
+
+ul.nobullet {
+	list-style-type: none;
+	display: inline;
+	text-align: left;
+}
+
+ul.menu {
+	list-style-type: none;
+	display: inline;
+	text-align: left;
+}
+
+body{
+	background-image: url("../recipeImages/silverware.jpg");
+	color: #404040;
+	font-size: 11pt;
+	font-family: Georgia, Garamond, sans-serif;
+	
+}
+
+a{
+	color: #A4A400;
+}
+
+abbr{
+	text-decoration: underline;
+}
+
+span.strikethrough{
+	text-decoration: line-through;
+}
+
+section {
+	background-color: #FFFFA8;
+	font-style: italic;
+	margin-left: 30px;
+}
+
+
