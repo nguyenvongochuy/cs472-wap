@@ -15,6 +15,7 @@ b{
 body{
 	background-color: #39CCCC;
 	font-family: Georgia;
+	
 }
 
 a{
@@ -75,10 +76,25 @@ span.underline{
 	color: blue;
 }
 
+
+
 /* Extra: dropcap first character 150% size */
 p.dropcap:first-letter {
     font-size: 150%;
     float: left;
     color: orange;
+}
+
+dt{
+	color: yellow;
+}
+
+ol { 
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+li {
+    flex: 0 0 auto;
 }
 
