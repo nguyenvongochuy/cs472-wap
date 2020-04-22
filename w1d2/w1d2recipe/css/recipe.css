@@ -27,7 +27,7 @@ h2{
 	text-align: right;
 }
 
-ul{
+ul.imageBullet{
 	list-style-image: url("../recipeImages/pie_bullet.png");
 }
 
