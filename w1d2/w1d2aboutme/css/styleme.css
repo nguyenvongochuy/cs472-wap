@@ -9,7 +9,7 @@ h3{
 
 b{
 	color: blue;
-	text-decoration: underline, overline;
+	text-decoration: underline overline;
 }
 
 body{
@@ -22,7 +22,7 @@ a{
 	font-style: italic;
 }
 
-<!-- Not set underline for hyperlink -->
+/* Not set underline for hyperlink */
 a:link {
   text-decoration: none;
 }
@@ -75,10 +75,10 @@ span.underline{
 	color: blue;
 }
 
-
+/* Extra: dropcap first character 150% size */
 p.dropcap:first-letter {
     font-size: 150%;
     float: left;
-    
-} <!-- First CAP character have bigger size -->
+    color: orange;
+}
 
