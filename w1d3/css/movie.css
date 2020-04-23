@@ -1,0 +1,151 @@
+body{
+	background-image: url("../images/background.png"); 
+	font-size: 8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+div.banner{
+	background-repeat: repeat;
+	background: url("../images/bannerbg.png");
+}
+
+img.banner{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1{
+	font-size: 25pt;
+	font-weight: bold;
+	text-align: center;
+	font-family: Tahoma, Verdana, sans-serif;
+	text-shadow: 3px 3px #999999
+}
+
+main.container{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px solid gray;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+
+/* Overview section on the right  */
+div.overview{
+	float: right;
+	width: 250px;
+	background-color: #A2B964;
+}
+
+dl{
+	margin: 10pt;
+	font-size: 8pt;
+	font-family: Arial, sans-serif;
+}
+
+dt{
+	font-size: 10pt;
+	font-weight: bold;
+	margin-top: 10pt;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+
+
+/* Review section on the left  */
+div.review{
+	width: 550px;
+	float: left;
+	
+}
+
+div.rating{
+	background-repeat: repeat;
+	background: url("../images/rbg.png");
+	height: 83px;
+}
+
+div.rating img {
+	float: left;	
+}
+
+span.center{
+	border: 20px;
+	font-size: 48pt;
+	color: red;
+	font-weight: bold;
+}
+
+div.columnOfReview{
+	overflow: hidden;
+	
+}
+
+div.columnOfReview1{
+	float: left;
+	width: 47%;
+}
+
+div.columnOfReview2{
+	float: left;
+	width: 47%;
+	margin-left: 2%;
+}
+
+p.quote{
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: #E8DC9B;
+	border:  2px solid gray;
+	border-radius: 10px;
+	padding: 8px;
+	margin: 10px;
+	overflow: hidden;
+}
+
+p.quote img{
+	margin-right: 5px;
+	float: left;
+}
+
+p.reviewInfo{
+	margin-bottom: 20pt;
+}
+
+p.reviewInfo img{
+	float: left;
+	
+}
+
+span.publication{
+	font-style: italic;
+	
+}
+
+
+/* Paging section   */
+p.footer{
+	clear: right;
+	text-align: center;
+	background-color: #A2B964;
+	padding: 5px;
+	margin-bottom: auto;
+}
+
+
+/* validation section   */
+div.validation{
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	opacity: 0.5;
+}
+
+
