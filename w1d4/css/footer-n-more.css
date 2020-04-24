@@ -39,3 +39,10 @@ span.right{
 	margin-right: 10px;
 }
 
+/* validation section   */
+.validation{
+	position: fixed;
+	right: 10px;
+	bottom: 35px;
+	opacity: 0.5;
+}
