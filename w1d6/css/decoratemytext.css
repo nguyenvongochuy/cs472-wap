@@ -1,0 +1,42 @@
+h1{
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+img{
+	width: 300px;
+	height: 200px;	
+}
+
+label {
+	font-size: 12px;
+}
+
+textarea{
+	width: 300px;
+}
+
+fieldset {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 1.5em;
+	border-left: 1px solid gray;
+	border-right: none;
+	width: 400px;
+}
+
+fieldset.noBorderBottom {
+	border-bottom: none;
+}
+
+textarea.changeStyle {
+	font-weight: bold;
+	color: green;
+	text-decoration: underline;
+}
+
+textarea.textAreaBigger{
+	//font-size: 24pt;
+}
+
+body.changeBg {
+	background-image: url("http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg");
+}

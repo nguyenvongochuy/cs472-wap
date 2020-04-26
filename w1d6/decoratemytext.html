@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	</head>
+	<head>
+		<title>Text Decorator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/decoratemytext.css" type="text/css" rel="stylesheet" />
+
+		<!--
+		This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+		<!-- link to your script file here -->
+		<script defer type="text/javascript" src="js/decoratemytext.js" ></script>
+	</head>
+
+	<body>
+		<h1>Text Decorator</h1>
+		
+		<div>
+			<img src="images/decorated.jpg" alt="very decorated!" />
+		</div>
+
+		<!-- Your UI controls go here -->
+		<div>
+			<fieldset>
+			<legend>Text</legend>
+			
+			<textarea id="textarea" rows=4 cols=30>
+			Sample Item 1
+			Sample Item 2
+			</textarea>
+			</fieldset>
+		</div>
+		
+		<div>
+			<fieldset class="noBorderBottom">
+			<legend>Decoration</legend>
+			<input type="button" id="bigger" value="Bigger Decorations!" /><br/>
+			<input type="checkbox" id="bling" value="Bling" /><label for="bling">Bling</label><br/>
+			<input type="button" id="pigLatin" value="Pig Latin" /><br/>
+			<input type="button" id="malKovitch" value="malKovitch" /><br/>
+			</fieldset>
+		</div>
+		
+	</body>
+</html>
