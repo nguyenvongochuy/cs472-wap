@@ -57,19 +57,16 @@ function modifyWord() {
 	let lines = allLines.split("\n");
 	for (let i=0; i<lines.length; i++) { 
 		let words = lines[i].split(" ");
-		words.map(w => {
+		words = words.map(w => {
 			if (isLetter(w)) {
-				result.push(convertToPigLatin(w));
+				return convertToPigLatin(w);
 			} else {
-				result.push(w);
+				return w;
 			}
 		})
-		
-		if (i!==lines.length-1)
-			result.push("\n");
+		result.push(words.join(" "));
 	}
-		//console.log(convertArrayToHtml(result));
-		document.getElementById("textarea").value = convertArrayToHtml(result);
+		document.getElementById("textarea").value = result.join("\n");
 }
 
 /**
@@ -133,28 +130,6 @@ function capitalize(s){
 	return s[0].toUpperCase() + s.slice(1);
 }
 
-/**
- * Convert array words to html and display in textarea
- * @param arr array of words including linebreak
- * @returns all lines and ready display in textarea of html
- */
-function convertArrayToHtml(arr) {
-	let result = "";
-	for (let i=0; i<arr.length; i++) {
-		if (arr[i]=="\n") {
-			result += "\n"
-		} else {
-			if (i!==arr.length-1)
-				result += arr[i] + " ";
-			else
-				result += arr[i];
-		}
-	}
-	
-	return result;
-}
-
-
 /* "Malkovitch" function: that causes words of >= 5 characters in length to be replaced with the word "Malkovich" */
 var changeWord = document.getElementById("malKovitch");
 changeWord.onclick = malkovitch;
@@ -163,20 +138,15 @@ changeWord.onclick = malkovitch;
  * Function to change word in lines if word's length is greater or equal than 5 and replace by "Malkovic" 
  */
 function malkovitch() {
-	let newLines="";
+	let newLines=[];
 	let allLines = document.getElementById("textarea").value;
 	let lines = allLines.split("\n");
 	for (let i=0; i<lines.length; i++) {
 		let words = lines[i].split(" ");
 		words = words.map(w => w.length>=5? "Malkovic": w);
-		if (i!==lines.length-1)
-			newLines += words.join(" ") + "\n";
-		else
-			newLines += words.join(" ");
+		newLines.push(words.join(" "));
 	}
-	//console.log(newLines);
-	document.getElementById("textarea").value = newLines;
-	
+	document.getElementById("textarea").value = newLines.join("\n");
 }
 
 
