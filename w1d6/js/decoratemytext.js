@@ -1,8 +1,12 @@
 /* Add event for button bigger */
 var button = document.getElementById("bigger");
 button.onclick = doBiggerClick;
-
+/**
+ * Function to change textarea to become bigger by click "Bigger Decorations!" button
+ * @returns change font size by add/remove css dynamically
+ */
 function doBiggerClick() {
+	//alert("doBiggerClick");
 	let textarea = document.getElementById("textarea");
 	let currentFontSize = window.getComputedStyle(textarea, null).getPropertyValue('font-size');
 	//console.log(currentFontSize);
@@ -17,8 +21,12 @@ function doBiggerClick() {
 /* Add event for checkbox */
 var checkbox = document.getElementById("bling");
 checkbox.onchange = doBling;
-
+/**
+ * Function to change Bling checkbox with background-color and font style
+ * @returns change background-color and font style by add/remove css dynamically
+ */
 function doBling() {
+	//alert("doBling");
 	let textarea = document.getElementById("textarea");
 	if (checkbox.checked) {
 		textarea.className = "changeStyle";
@@ -34,7 +42,10 @@ function doBling() {
 /* "pig Latin" function */
 var changeWord = document.getElementById("pigLatin");
 changeWord.onclick = modifyWord;
-
+/**
+ * Function to modify all lines with all words to pig latin
+ * @returns update to textarea with Pig latin
+ */
 function modifyWord() {
 	let allLines = document.getElementById("textarea").value.trim();
 	//console.log(allLines);
@@ -57,7 +68,13 @@ function modifyWord() {
 		document.getElementById("textarea").value = convertArrayToHtml(result);
 }
 
-
+/**
+ * Function to convert word to Pig Latin with rules:
+ * Words beginning in a consonant (or consonant cluster) have that consonant (or consonant cluster) moved to the end and -ay tacked on following.
+ * Words beginning in a vowel simply have -ay tacked on the end.
+ * @param word a word need to convert to pig latin
+ * @returns the pig latin of a word. E.g. Words "Pig Latin" will display to "Igpay Atinlay"
+ */
 function convertToPigLatin(word) {
 	let isFirstCharUppercase = (word[0] === word[0].toUpperCase());
 	//console.log(isFirstCharUppercase);
@@ -78,10 +95,20 @@ function convertToPigLatin(word) {
 	return newWord;
 }
 
+/**
+ * Function to check whether character is letter or not
+ * @param s character
+ * @returns true: if character is from a-z, false: if character is not from a-z
+ */
 function isLetter(s){
 	return s.match(/[a-z]/i);
 }
 
+/**
+ * Function to check whether character is vowel or not
+ * @param c character
+ * @returns true: if character is vowel, false: if character is not vowel
+ */
 function isBeginWithVowel(c) {
 	if (c.toLowerCase() ==='a' ||
 			c.toLowerCase() ==='e' ||
@@ -93,10 +120,20 @@ function isBeginWithVowel(c) {
 		return false;
 }
 
+/**
+ * This function to make the first Character in word to uppercase
+ * @param s string
+ * @returns Capitalize for 1st character to uppercase
+ */
 function capitalize(s){
 	return s[0].toUpperCase() + s.slice(1);
 }
 
+/**
+ * Convert array words to html and display in textarea
+ * @param arr array of words including linebreak
+ * @returns all lines and ready display in textarea of html
+ */
 function convertArrayToHtml(arr) {
 	let result = "";
 	for (let i=0; i<arr.length; i++) {
@@ -118,6 +155,9 @@ function convertArrayToHtml(arr) {
 var changeWord = document.getElementById("malKovitch");
 changeWord.onclick = malkovitch;
 
+/**
+ * Function to change word in lines if word's length is greater or equal than 5 and replace by "Malkovic" 
+ */
 function malkovitch() {
 	let newLines="";
 	let allLines = document.getElementById("textarea").value;

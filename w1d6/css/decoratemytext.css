@@ -40,3 +40,17 @@ textarea.textAreaBigger{
 body.changeBg {
 	background-image: url("http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg");
 }
+
+/* validation section   */
+.validation{
+	//position: fixed;
+	//right: 10px;
+	//bottom: 35px;
+	//opacity: 0.5;
+	text-align: right;
+}
+
+.validation img {
+    width: 100px;
+    height: 30px;
+}
