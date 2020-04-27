@@ -1,6 +1,4 @@
-/*jshint esversion: 6 */
-/*jslint browser: true */
-/*global window */
+"use strict";
 
 /* Add event for button bigger */
 var button = document.getElementById("bigger");
