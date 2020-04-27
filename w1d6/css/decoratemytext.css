@@ -34,7 +34,7 @@ textarea.changeStyle {
 }
 
 textarea.textAreaBigger{
-	//font-size: 24pt;
+	/*font-size: 24pt;*/
 }
 
 body.changeBg {
@@ -43,10 +43,7 @@ body.changeBg {
 
 /* validation section   */
 .validation{
-	//position: fixed;
-	//right: 10px;
-	//bottom: 35px;
-	//opacity: 0.5;
+
 	text-align: right;
 }
 
