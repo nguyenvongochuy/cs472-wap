@@ -109,11 +109,11 @@ function isLetter(s){
  * @returns true: if character is vowel, false: if character is not vowel
  */
 function isBeginWithVowel(c) {
-	if (c.toLowerCase() ==='a' ||
-			c.toLowerCase() ==='e' ||
-			c.toLowerCase() ==='i' ||
-			c.toLowerCase() ==='o' ||
-			c.toLowerCase() ==='u')
+	if (c.toLowerCase() ==="a" ||
+			c.toLowerCase() ==="e" ||
+			c.toLowerCase() ==="i" ||
+			c.toLowerCase() ==="o" ||
+			c.toLowerCase() ==="u")
 		return true;
 	else
 		return false;
