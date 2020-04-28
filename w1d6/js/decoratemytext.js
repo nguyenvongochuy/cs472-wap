@@ -61,7 +61,11 @@ function modifyWord() {
 		let words = lines[i].split(" ");
 		words = words.map(w => {
 			if (isLetter(w)) {
-				return convertToPigLatin(w);
+				if (!isBeginWithVowel(w.charAt(0))) {
+					return convertToPigLatin(w);
+				} else {
+					return w + "ay";
+				}
 			} else {
 				return w;
 			}
