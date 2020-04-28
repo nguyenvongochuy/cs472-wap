@@ -226,8 +226,8 @@ var printFibo = function(n, a, b) {
 }
 
 
-console.log("Prob12 (printFibo(1, 0 ,1)): " + printFibo(1, 0, 1));
-console.log("Prob12 (printFibo(2, 0, 1)): " + printFibo(2, 0, 1));
-console.log("Prob12 (printFibo(10, 0 ,1)): " + printFibo(10, 0, 1));
+console.log("Prob13 (printFibo(1, 0 ,1)): " + printFibo(1, 0, 1));
+console.log("Prob13 (printFibo(2, 0, 1)): " + printFibo(2, 0, 1));
+console.log("Prob13 (printFibo(10, 0 ,1)): " + printFibo(10, 0, 1));
 
 
