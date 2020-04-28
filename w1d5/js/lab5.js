@@ -78,14 +78,36 @@ console.log("Prob4 (multiply([1,2,3,4])): " + multiply([1,2,3,4]))
  */
 
 const reverse = function(s){
+	let temp;
+	for (let i=0; i<s.length/2-1; i++){
+		temp = s.charAt(i); 
+		s= replaceAt(s, i, s.charAt(s.length-i-1));  
+		s= replaceAt(s, s.length-i-1, temp);
+	}
+	return s;
+	
+	/*
 	let result="";
 	for (let i=s.length-1;i>=0; i--){
 		result += s[i];
 	}
 	return result;
+	*/
+	
 }
 
 console.log("Prob5 (reverse(\"jag testar\")): " + reverse("jag testar"));
+
+/**
+ * Utility to replace character at index
+ * @param string original string
+ * @param index index of string
+ * @param replace replace character
+ * @returns replace the charater of string at particular index
+ */
+function replaceAt(string, index, replace) {
+	return string.substring(0, index) + replace + string.substring(index+1);
+}
 
 
 /**
