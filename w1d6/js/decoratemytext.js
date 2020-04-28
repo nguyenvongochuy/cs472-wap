@@ -1,8 +1,16 @@
 "use strict";
+window.onload = function () {
+    /* Add event for button bigger */
+	document.getElementById("bigger").onclick = doBiggerClick;
+    /* Add event for checkbox */
+	document.getElementById("bling").onchange = doBling;
+    /* Add event for "pig Latin" function */
+	document.getElementById("pigLatin").onclick = modifyWord;
+    /* "Malkovitch" function: that causes words of >= 5 characters in length to be replaced with the word "Malkovich" */
+	document.getElementById("malKovitch").onclick = malkovitch;
+};
 
-/* Add event for button bigger */
-var button = document.getElementById("bigger");
-button.onclick = doBiggerClick;
+
 /**
  * Function to change textarea to become bigger by click "Bigger Decorations!" button
  * @returns change font size by add/remove css dynamically
@@ -10,7 +18,7 @@ button.onclick = doBiggerClick;
 function doBiggerClick() {
 	//alert("doBiggerClick");
 	let textarea = document.getElementById("textarea");
-	let currentFontSize = window.getComputedStyle(textarea, null).getPropertyValue('font-size');
+	let currentFontSize = window.getComputedStyle(textarea, null).getPropertyValue("font-size");
 	//console.log(currentFontSize);
 	if (currentFontSize.includes("px")) //convert font-size px to pt
 		currentFontSize = 3/4 * parseInt(currentFontSize);
@@ -20,9 +28,7 @@ function doBiggerClick() {
 }
 
 
-/* Add event for checkbox */
-var checkbox = document.getElementById("bling");
-checkbox.onchange = doBling;
+
 /**
  * Function to change Bling checkbox with background-color and font style
  * @returns change background-color and font style by add/remove css dynamically
@@ -30,7 +36,7 @@ checkbox.onchange = doBling;
 function doBling() {
 	//alert("doBling");
 	let textarea = document.getElementById("textarea");
-	if (checkbox.checked) {
+	if (document.getElementById("bling").checked) {
 		textarea.className = "changeStyle";
 		document.body.className = "changeBg";
 	} else {
@@ -41,9 +47,7 @@ function doBling() {
 }
 
 
-/* "pig Latin" function */
-var changeWord = document.getElementById("pigLatin");
-changeWord.onclick = modifyWord;
+
 /**
  * Function to modify all lines with all words to pig latin
  * @returns update to textarea with Pig latin
@@ -128,9 +132,6 @@ function capitalize(s){
 	return s[0].toUpperCase() + s.slice(1);
 }
 
-/* "Malkovitch" function: that causes words of >= 5 characters in length to be replaced with the word "Malkovich" */
-changeWord = document.getElementById("malKovitch");
-changeWord.onclick = malkovitch;
 
 /**
  * Function to change word in lines if word's length is greater or equal than 5 and replace by "Malkovic" 
