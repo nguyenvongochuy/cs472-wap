@@ -1,6 +1,15 @@
+"use strict";
+window.onload = function () {
+    /* Add event for button bigger */
+	document.getElementById("stopClock").onclick = doStopClock;
+};
+
 /**
  * Display current time function and Immediately-Invoked Function
  */
+
+var timer;
+
 (function currentTime() {
   var date = new Date(); 
   var hour = date.getHours();
@@ -11,7 +20,7 @@
   sec = updateTime(sec);
   
   document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
-  var t = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
+  timer = setTimeout(function(){ currentTime() }, 1000); /* setting timer */
 }());
 
 /**
@@ -25,4 +34,13 @@ function updateTime(k) {
     return k;
   }
 }
+
+
+/**
+ * Function to stop Clock
+*/
+function doStopClock(){
+	clearTimeout(timer);
+}
+
 
