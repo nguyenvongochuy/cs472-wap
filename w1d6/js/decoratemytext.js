@@ -83,7 +83,7 @@ function convertToPigLatin(word) {
 		if (newWord.length==0) {
 			newWord += c;
 		} else {
-		    newWord = newWord.substring(0, newWord.length-1) + c + newWord.substring(newWord.length-1);
+			newWord = newWord.substring(0, newWord.length-1) + c + newWord.substring(newWord.length-1);
 		}
 	}
 	
@@ -129,7 +129,7 @@ function capitalize(s){
 }
 
 /* "Malkovitch" function: that causes words of >= 5 characters in length to be replaced with the word "Malkovich" */
-var changeWord = document.getElementById("malKovitch");
+changeWord = document.getElementById("malKovitch");
 changeWord.onclick = malkovitch;
 
 /**
