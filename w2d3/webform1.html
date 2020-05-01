@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS472 WAP - My Web Form 1 + jQuery</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/footer-n-more.css" rel="stylesheet">
+    <!-- java script -->
+    <script defer src="js/jquery-3.5.0.min.js"></script>
+    <script defer src="js/prob4_form.js"></script>
+	
+  </head>
+
+  <body>
+
+    <!-- navbar section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  	<a class="navbar-brand" href="https://nguyenvongochuy.github.io/cs472-wap/">CS472 WAP</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://nguyenvongochuy.github.io/cs472-wap/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="webform1.html">Web Form 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="webform2.html">Web Form 2</a>
+      </li>
+      
+    </ul>
+    
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Internet-web-browser.svg/1200px-Internet-web-browser.svg.png" alt="internet" width="50" height="50"/>
+  </div>
+</nav>
+    
+    
+    <!-- Content Section -->
+    <div class="container">
+		<form id="loginForm">
+		  <div class="form-group">
+		    <label for="inputEmail">Email address</label>
+		    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+		    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword">Password</label>
+		    <input type="password" class="form-control" id="inputPassword" placeholder="Password" 
+		    pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}" required title="the Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter)">
+		  </div>
+		  <div class="form-group">
+		    <label for="inputUrl">URL</label>
+		    <input type="text" class="form-control" id="inputUrl" placeholder="Enter URL" 
+		    pattern="https?://.+" required title="The Url must enter beginning with either the string, http:// or https://">
+		  </div>
+		  <div class="form-group form-check">
+		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>      
+    </div>
+
+	<br/>
+	<p class="text-muted"><a href="js/prob4_form.js" target="_blank">Refer JS file</a></p>
+
+    <footer class="footer">
+        <span class="text-muted">WAP :: Vo Ngoc Huy, Nguyen (611066)</span>
+        <span class="text-muted right">&copy; 04/2020</span>
+    </footer>
+
+	<!-- 
+	<div class="validation">
+			<a href="http://validator.w3.org/check?uri=https://nguyenvongochuy.github.io/cs472-wap/w1d4/webform1.html"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="Valid HTML5" /></a> <br />
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=https://nguyenvongochuy.github.io/cs472-wap/w1d4/webform1.html"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="Valid CSS" /></a>
+	</div>
+ 	-->
+  </body>
+</html>
