@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "customerName": "John H. Smith",
+        "gender": "Male",
+        "category": "Feedback",
+        "message": "This is a feedback"
+    },
+    {
+        "id": 2,
+        "customerName": "Anna Jones",
+        "gender": "Female",
+        "category": "Inquiry",
+        "message": "This is an inquiry"
+    },
+    {
+        "id": 3,
+        "customerName": "Bob W. Adamson",
+        "gender": "Male",
+        "category": "Complaint",
+        "message": "This is a complaint"
+    },
+    {
+        "id": 4,
+        "customerName": "Zacary Najib Ali",
+        "gender": "Male",
+        "category": "Inquiry",
+        "message": "This is an inquiry"
+    },
+    {
+        "id": 5,
+        "customerName": "Carlos Hernadez",
+        "gender": "Male",
+        "category": "Complaint",
+        "message": "This is complaint"
+    },
+    {
+        "id": 6,
+        "customerName": "Tam Le",
+        "gender": "Male",
+        "category": "Feedback",
+        "message": "This is a feedback"
+    },
+    {
+        "id": 7,
+        "customerName": "Joe",
+        "gender": "Male",
+        "category": "Feedback",
+        "message": "This is a feedback"
+    },
+    {
+        "id": 8,
+        "customerName": "Jonathan",
+        "gender": "Female",
+        "category": "Complaint",
+        "message": "This is an inquiry"
+    },
+    {
+        "id": 9,
+        "customerName": "Christopher",
+        "gender": "Male",
+        "category": "Complaint",
+        "message": "This is a complaint"
+    },
+    {
+        "id": 10,
+        "customerName": "Ames",
+        "gender": "Male",
+        "category": "Inquiry",
+        "message": "This is an inquiry"
+    },
+    {
+        "id": 11,
+        "customerName": "Helmut",
+        "gender": "Male",
+        "category": "Complaint",
+        "message": "This is complaint"
+    },
+    {
+        "id": 12,
+        "customerName": "Vo Nguyen",
+        "gender": "Male",
+        "category": "Complaint",
+        "message": "This is a feedback"
+    }
+]
+

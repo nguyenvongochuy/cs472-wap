@@ -1,0 +1,4 @@
+# Default ignored files
+/docker/data
+/out
+.DS_Store
