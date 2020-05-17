@@ -1,0 +1,27 @@
+footer {
+  border-top: 1px solid #ddd;
+  overflow: hidden;
+  padding: 15px;
+  background-color: #ddd;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.btn-lg {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  margin-left: auto;
+}
+#tableView {
+  margin-bottom: 100px;
+}
+.row {
+  padding: 15px 0;
+}
+#tableView .row-data:nth-child(odd) {
+  background-color: #ddd;
+}
+.row-header {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
